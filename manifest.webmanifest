@@ -1,0 +1,31 @@
+{
+  "id": "./",
+  "name": "Тёплое с мягким — Цифровой планшет",
+  "short_name": "Тёплое",
+  "description": "Автономный цифровой планшет, карточки определений, карточки заданий и подсчёт очков для настольной игры «Тёплое с мягким».",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#F6F7FB",
+  "theme_color": "#13294B",
+  "icons": [
+    {
+      "src": "./icons/pwa-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./icons/pwa-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./icons/pwa-maskable-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

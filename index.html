@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>Тёплое с мягким — Цифровой планшет</title>
+    <meta
+      name="description"
+      content="Автономное мобильное приложение для настольной игры «Тёплое с мягким»: карточки определений и заданий, планшет с дисками и подсчёт очков."
+    />
+    <meta name="theme-color" content="#13294B" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="Тёплое" />
+    <link rel="manifest" href="./manifest.webmanifest" />
+    <link rel="apple-touch-icon" href="./icons/apple-touch-icon.png" />
+    <link rel="icon" type="image/svg+xml" href="./icons/icon.svg" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div id="app" class="app-shell">
+      <header class="top-header">
+        <div class="container header-inner">
+          <button type="button" id="logo-btn" class="logo-btn">
+            <span class="logo-mark" aria-hidden="true">
+              <svg viewBox="0 0 36 36" width="28" height="28" fill="none">
+                <path
+                  d="M7 25V12.5L12.5 16.5H23.5L29 12.5V25C29 27 27.2 28.5 25 28.5H11C8.8 28.5 7 27 7 25Z"
+                  fill="#F4C430"
+                />
+                <circle cx="14.5" cy="21" r="1.7" fill="#13294B" />
+                <circle cx="21.5" cy="21" r="1.7" fill="#13294B" />
+                <circle cx="18" cy="10" r="2.6" fill="#E03A88" />
+                <path
+                  d="M16.2 24L18 25.4L19.8 24"
+                  stroke="#13294B"
+                  stroke-width="1.6"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </span>
+            <span id="brand-title" class="brand-title">Тёплое с мягким</span>
+          </button>
+
+          <div class="header-actions">
+            <button type="button" id="lang-btn" class="btn-lang">RU</button>
+            <button type="button" id="rules-btn" class="btn-rules">Правила</button>
+          </div>
+        </div>
+      </header>
+
+      <div id="context-strip" class="context-strip hidden"></div>
+
+      <main id="main-content" class="container main-content"></main>
+
+      <!-- Exit Game Modal -->
+      <div id="exit-modal" class="modal-backdrop hidden" role="dialog" aria-modal="true" aria-labelledby="exit-modal-title">
+        <div class="modal-card" id="exit-modal-card"></div>
+      </div>
+
+      <!-- iOS Install Guide Modal -->
+      <div id="ios-modal" class="modal-backdrop hidden" role="dialog" aria-modal="true" aria-labelledby="ios-modal-title">
+        <div class="modal-card" id="ios-modal-card"></div>
+      </div>
+
+      <!-- Offline Mode Indicator -->
+      <div id="offline-toast" class="offline-toast hidden" role="status"></div>
+    </div>
+
+    <script src="./data.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
